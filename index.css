@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#keyboard {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: row;
+}
+
+.row:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.row:nth-child(3) {
+    margin-left: 4rem;
+}
+
+.row:nth-child(4) {
+    margin-left: 6rem;
+}
+
+.key {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    width: 4rem;
+    height: 4rem;
+}
+
+.key.down {
+    color: white;
+    background-color: black;
+}
+
+.key_name {
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    font-size: 0.75em;
+}
